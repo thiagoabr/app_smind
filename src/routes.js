@@ -2,9 +2,9 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import DashboardLayout from 'src/layouts/DashboardLayout';
 import MainLayout from 'src/layouts/MainLayout';
+import LoginView from 'src/views/auth/LoginView';
 import UsersView from 'src/views/users/UsersView';
 import DashboardView from 'src/views/reports/DashboardView';
-import LoginView from 'src/views/auth/LoginView';
 import NotFoundView from 'src/views/errors/NotFoundView';
 import RegisterView from 'src/views/auth/RegisterView';
 import ForgotPasswordView from 'src/views/auth/ForgotPasswordView';
@@ -14,6 +14,7 @@ import ConsultationTypesView from 'src/views/consultationTypes/ConsultationTypes
 import ConsultationStatusView from 'src/views/consultationStatus/ConsultationStatusView';
 import CalendarView from 'src/views/calendar/CalendarView';
 import PacientView from 'src/views/pacients/PacientsView';
+import ProfileView from 'src/views/profile/ProfileView';
 
 const routes = [
   {
@@ -29,6 +30,7 @@ const routes = [
       { path: 'consultationTypes', element: <ConsultationTypesView /> },
       { path: 'dashboard', element: <DashboardView /> },
       { path: 'settings', element: <SettingsView /> },
+      { path: 'profile', element: <ProfileView /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   },

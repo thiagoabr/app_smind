@@ -23,6 +23,7 @@ import {
   UserPlus as UserPlusIcon,
   Users as UsersIcon,
   Calendar as CalendarIcon,
+  Key as LockIcon,
 } from 'react-feather';
 import NavItem from './NavItem';
 
@@ -101,6 +102,11 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         href: '/app/settings',
         icon: SettingsIcon,
         title: 'Configurações'
+      },
+      {
+        href: '/app/profile',
+        icon: LockIcon,
+        title: 'Perfil'
       }
     ];
   } else {
@@ -124,6 +130,11 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         href: '/app/settings',
         icon: SettingsIcon,
         title: 'Configurações'
+      },
+      {
+        href: '/app/profile',
+        icon: LockIcon,
+        title: 'Perfil'
       }];
   }
 

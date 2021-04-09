@@ -16,10 +16,6 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(() => ({
   root: {},
-  avatar: {
-    width: 60,
-    height: 60
-  }
 }));
 
 const TopBar = ({

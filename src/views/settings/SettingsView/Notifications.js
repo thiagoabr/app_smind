@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-use-before-define */
 /* eslint-disable camelcase */
 import React, { useState, useEffect, useRef } from 'react';
@@ -140,14 +141,14 @@ const Notifications = ({ className, ...rest }) => {
                 <FormControlLabel control={(<Checkbox defaultChecked={values.sabado} checked={values.sabado} onChange={(e) => { setValues({ ...values, sabado: e.target.checked }); }} />)} label="Sábado" />
               </Box>
               <br />
-              <Typography color="textPrimary" gutterBottom variant="h6">Texto SMS Agendamento</Typography>
+              {/* <Typography color="textPrimary" gutterBottom variant="h6">Texto SMS Agendamento</Typography>
               <TextField placeholder="Máximo 150 caracteres" name="textoAgendamento" value={values.textoAgendamento} onChange={handleChange} multiline rows={3} />
               <br />
               <Typography color="textPrimary" gutterBottom variant="h6">Texto SMS Reagendamento</Typography>
               <TextField placeholder="Máximo 150 caracteres" name="textoReagendamento" value={values.textoReagendamento} onChange={handleChange} multiline rows={3} />
               <br />
               <Typography color="textPrimary" gutterBottom variant="h6">Texto SMS Cancelamento</Typography>
-              <TextField placeholder="Máximo 150 caracteres" name="textoCancelamento" value={values.textoCancelamento} onChange={handleChange} multiline rows={3} />
+              <TextField placeholder="Máximo 150 caracteres" name="textoCancelamento" value={values.textoCancelamento} onChange={handleChange} multiline rows={3} /> */}
             </Grid>
           </Grid>
         </CardContent>
